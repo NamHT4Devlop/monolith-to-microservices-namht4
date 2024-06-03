@@ -17,11 +17,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - run: docker-compose -f docker-compose-build.yaml build --parallel
-    - run: docker tag udagram-frontend:local NamHT4Devlop/udagram-frontend:v1
-    - run: docker tag udagram-api-user NamHT4Devlop/udagram-api-user:v1
-    - run: docker tag udagram-api-feed NamHT4Devlop/udagram-api-feed:v1
-    - run: docker tag reverseproxy NamHT4Devlop/reverseproxy:v1
-    - run: docker push NamHT4Devlop/udagram-frontend:v1
-    - run: docker push NamHT4Devlop/udagram-api-user:v1
-    - run: docker push NamHT4Devlop/udagram-api-feed:v1
-    - run: docker push NamHT4Devlop/reverseproxy:v1
+    - run: docker tag udagram-frontend:local namht4devlop/udagram-frontend:v1
+    - run: docker tag udagram-api-user namht4devlop/udagram-api-user:v1
+    - run: docker tag udagram-api-feed namht4devlop/udagram-api-feed:v1
+    - run: docker tag reverseproxy namht4devlop/reverseproxy:v1
+    - run: docker push namht4devlop/udagram-frontend:v1
+    - run: docker push namht4devlop/udagram-api-user:v1
+    - run: docker push namht4devlop/udagram-api-feed:v1
+    - run: docker push namht4devlop/reverseproxy:v1
